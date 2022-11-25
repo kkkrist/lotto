@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: rgb(67 56 202);
+    --color-indigo-500: rgb(99 102 241);
+    --color-secondary: rgb(255 228 230);
+  }
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+input[type=range]:disabled {
+  opacity: 0.75;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  border-radius: 0.25rem;
+  border: 2px solid var(--color-indigo-500);
+  cursor: pointer;
+  height: 2.25rem;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--color-indigo-500);
+  cursor: pointer;
+  height: 2rem;
+  width: 0.5rem;
+}
