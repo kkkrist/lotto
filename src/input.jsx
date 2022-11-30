@@ -16,7 +16,7 @@ const Input = ({ hasError, highlight, ...props }) => {
   }
 
   if (!hasError && highlight) {
-    className += ' bg-rose-100'
+    className += ' bg-rose-100 disabled:bg-rose-100'
   }
 
   return (
